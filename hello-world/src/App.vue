@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <UserD></UserD>
+    <page-t></page-t>
+    <nav-cont></nav-cont>    
+    <main-cont></main-cont>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UserD from './components/UserDetail.vue'
+import PageT from './components/PageTitle.vue'
+import NavCont from './components/NavContent.vue'
+import MainCont from './components/MainContent.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    UserD, PageT, NavCont, MainCont
   }
 }
 </script>
@@ -24,5 +29,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: inline;
 }
+body{
+  height: 100vh;
+  width: 100%;
+}
+
 </style>
